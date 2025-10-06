@@ -1,1 +1,1 @@
-# Professional-CUDA-C-Programming_Code
+Code for Professional CUDA C Programming.

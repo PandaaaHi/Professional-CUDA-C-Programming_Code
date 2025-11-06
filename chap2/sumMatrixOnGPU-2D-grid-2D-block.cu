@@ -126,6 +126,10 @@ int main(int argc, char **argv) {
     // invoke kernel at host side
     int dimx = 32;
     int dimy = 16;
+    if (argc > 2) {
+        dimx = atoi(argv[1]);
+        dimy = atoi(argv[2]);
+    }
     dim3 block(dimx, dimy);
     dim3 grid((nx+block.x-1)/block.x, (ny+block.y-1)/block.y);
 
